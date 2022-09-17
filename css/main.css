@@ -1,1 +1,13 @@
 /* mis estilos*/
+
+.bg-dark {
+  background-color: #b29c7f !important;
+}
+
+.navbar-dark {
+  background-color: #b29c7f !important;
+}
+
+.bg-secondary {
+  background-color: #e3bf99 !important;
+}
