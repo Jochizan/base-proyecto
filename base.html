@@ -10,24 +10,26 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="css/main.css" />
-    <title>Base para proyectos</title>
+    <title>Studio World</title>
   </head>
-  <body class="d-flex flex-column min-vh-100">
-    <header class="d-flex flex-column align-items text-align">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
+  <body class="d-flex flex-column min-vh-100 bg-light">
+    <header class="d-flex flex-column align-items text-align w-m-100 bg-light">
+      <nav
+        class="navbar navbar-expand-sm navbar-light fixed-top bg-light border-bottom shadow pb-2"
+        id="navbar"
+      >
         <div class="fs-1">
           <img
-            src="img/figure01.png"
-            width="60"
-            height="60"
+            src="img/logo.png"
+            class="fixed-top-logo"
+            width="135"
+            height="135"
             alt="logo de la página"
           />
         </div>
-
         <button
-          class="navbar-toggler"
+          class="navbar-toggler me-3 mt-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#suppCollapse"
@@ -37,21 +39,32 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="suppCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">opcción 1</a>
+        <div
+          class="navbar-collapse collapse d-md-flex align-items-center flex-column justify-content-center"
+          id="suppCollapse"
+          style="text-align: center"
+        >
+          <h1 class="fs-2 mt-1 ms-md-5 ps-md-5">STUDIO WORLD</h1>
+          <ul class="navbar-nav mr-auto mx-4 d-flex justify-content-center">
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link active" href="#">Apuntes</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">opcción 2</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">opcción 3</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">opcción 4</a></li>
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link" href="#">Motivación</a>
+            </li>
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link" href="#">DRIVE</a>
+            </li>
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link" href="#">Horario de actividades</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="flex-grow-1 bg-secondary">
-      <section class="text-white p-2">
+    <main class="flex-grow-1 bg-secondary mt-4">
+      <section class="text-dark px-4">
         <!-- CAROUSEL-->
         <div
           id="carouselExampleCaptions"
@@ -80,46 +93,54 @@
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner text-dark bg-light py-4">
             <div class="carousel-item active">
-              <img src="img/slide01.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="img/slide01.jpeg"
+                class="d-block w-100 limit-img mx-auto"
+                alt="..."
+              />
               <div
-                class="carousel-caption d-none d-md-block"
+                class="carousel-caption mb-5"
                 style="backdrop-filter: blur(4px)"
               >
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
+                <h2 class="text-dark">¡Hoy es el día!</h2>
+                <p class="text-dark">
+                  El éxito es la suma de pequeños esfuerzos repetidos día tras
+                  día.
                 </p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/slide02.jpg" class="d-block w-100" alt="..." />
-              <div
-                class="carousel-caption d-none d-md-block"
-                style="backdrop-filter: blur(4px)"
-              >
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
+              <img
+                src="img/slide02.jpeg"
+                class="d-block w-100 limit-img mx-auto"
+                alt="..."
+              />
+              <div class="carousel-caption" style="backdrop-filter: blur(4px)">
+                <h2 class="text-dark">Aviso Importante</h2>
+                <p class="text-dark">
+                  Solo con el corazón se puede ver bien lo esencial es invisible
+                  para los ojos
                 </p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/slide03.jpg" class="d-block w-100" alt="..." />
-              <div
-                class="carousel-caption d-none d-md-block"
-                style="backdrop-filter: blur(4px)"
-              >
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
+              <img
+                src="img/slide03.jpeg"
+                class="d-block w-100 limit-img mx-auto"
+                alt="..."
+              />
+              <div class="carousel-caption" style="backdrop-filter: blur(4px)">
+                <h2 class="text-dark">STUDIO WORLD</h2>
+                <p class="text-dark">
+                  El éxito no se da de la noche a la mañana
                 </p>
               </div>
             </div>
           </div>
           <button
-            class="carousel-control-prev bg-dark"
+            class="carousel-control-prev bg-light-h"
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
@@ -128,7 +149,7 @@
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next bg-dark"
+            class="carousel-control-next bg-light-h"
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
@@ -138,13 +159,28 @@
           </button>
         </div>
       </section>
+      <section
+        class="d-flex flex-column justify-content-center align-items-center gap-2"
+      >
+        <h2 class="mt-2">Vínculos</h2>
+        <button class="btn btn-primary w-75 m-1 limit-button">Apuntes</button>
+        <button class="btn btn-primary w-75 m-1 limit-button">
+          Motivación
+        </button>
+        <button class="btn btn-primary w-75 m-1 limit-button">DRIVE</button>
+        <button class="btn btn-primary w-75 m-1 mb-3 limit-button">
+          Horario de actividades
+        </button>
+      </section>
     </main>
-    <footer class="bg-dark w-100 d-flex justify-content-center align-items-center">
+    <footer
+      class="bg-light w-100 d-flex justify-content-center align-items-center"
+    >
       <a
         href=""
         target="_blank"
         rel="noopener noreferrer"
-        class="text-decoration-none text-white text-nowrap py-3"
+        class="text-decoration-none text-dark text-nowrap py-3"
       >
         Made with
         <svg
@@ -162,7 +198,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        by ???
+        by STUDIO WORLD
       </a>
     </footer>
 

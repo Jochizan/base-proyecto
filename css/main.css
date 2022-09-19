@@ -1,13 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 /* mis estilos*/
 
-.bg-dark {
-  background-color: #b29c7f !important;
+:root {
+  --bg: #b29c7f;
+  --primary: #ffb0ac;
+  --primary-h: #ffc0bc;
+  --secondary: #f6d4ca;
+  --secondary-h: #e6c4ba;
+  --third: #a28581;
+  --third-h: #a27571;
+  --third-g: #b29591;
 }
 
-.navbar-dark {
-  background-color: #b29c7f !important;
+* {
+  font-family: "Playfair" !important;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+}
+
+.bg-light {
+  background-color: var(--secondary) !important;
+}
+
+.navbar-light {
+  background-color: var(--secondary) !important;
 }
 
 .bg-secondary {
-  background-color: #e3bf99 !important;
+  background-color: var(--primary-h) !important;
+}
+
+.bg-light-h {
+  background-color: var(--secondary-h) !important;
+}
+
+.btn-primary {
+  background-color: var(--third) !important;
+  border-color: var(--third) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--third-h) !important;
+  border-color: var(--third-g) !important;
+  outline: none !important;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--third-h) !important;
+  border-color: var(--third-g) !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.fixed-top-logo {
+  position: fixed;
+  top: calc(0% - 28px);
+  left: calc(0% - 20px);
+}
+
+.w-m-100 {
+  min-height: 80px !important;
+}
+
+.img-bg {
+  object-fit: cover;
+}
+
+.limit-img {
+  max-height: 600px;
+  max-width: 900px;
+}
+
+.limit-button {
+  max-width: 600px;
+}
+
+@media (min-width: 576px) {
+  .fixed-top-logo {
+    left: calc(50% - 204px);
+    max-height: 120px;
+  }
 }
