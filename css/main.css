@@ -13,7 +13,7 @@
 }
 
 * {
-  font-family: "Playfair" !important;
+  font-family: 'Playfair' !important;
   font-size: 17px;
   letter-spacing: 1.5px;
 }
@@ -56,8 +56,9 @@
 
 .fixed-top-logo {
   position: fixed;
-  top: calc(0% - 28px);
+  top: calc(0% - 20px);
   left: calc(0% - 20px);
+  max-height: 100px;
 }
 
 .w-m-100 {
@@ -80,6 +81,5 @@
 @media (min-width: 576px) {
   .fixed-top-logo {
     left: calc(50% - 204px);
-    max-height: 120px;
   }
 }
